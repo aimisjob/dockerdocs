@@ -5,7 +5,7 @@ pipeline {
         stage('Build'){   
 		    agent {
 			    dockerfile {
-				    dir 'swe'
+				   filename "custom"
 			}
 		    }
             steps{
