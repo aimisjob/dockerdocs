@@ -7,6 +7,7 @@ pipeline {
 			    dockerfile {
 				    dir 'swe'
 			}
+		    }
             steps{
                 sh 'cat /etc/lsb-release'
             }
