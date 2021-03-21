@@ -5,7 +5,7 @@ pipeline {
         stage('Build'){   
 		    agent {
 			    dockerfile {
-				   filename "custom"
+				   additionalBuildArgs '--tag pavan:talks'
 			}
 		    }
             steps{
