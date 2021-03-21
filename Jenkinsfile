@@ -4,7 +4,8 @@ pipeline {
   
         stage('Build'){   
 		    agent {
-				dockerfile true
+			    dockerfile {
+				    dir 'swe'
 			}
             steps{
                 sh 'cat /etc/lsb-release'
